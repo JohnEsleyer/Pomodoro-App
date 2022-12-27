@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro/widgets/timeoptions.dart';
 import 'utils.dart';
 import 'widgets/timercard.dart';
+import 'widgets/timecontroller.dart';
+import 'widgets/progresswidget.dart';
 
 class PomodoroScreen extends StatelessWidget {
   @override
@@ -31,6 +34,14 @@ class PomodoroScreen extends StatelessWidget {
           child: Column(children: [
             SizedBox(height: 15),
             TimerCard(),
+            SizedBox(height: 40),
+            TimeOptions(),
+            SizedBox(height: 40),
+            TimeController(),
+            SizedBox(
+              height: 30,
+            ),
+            ProgressWidget(),
           ]),
         ),
       ),
